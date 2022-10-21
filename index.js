@@ -38,10 +38,10 @@ function newItem(linksrc, y, z){
     let item = document.createElement('img')
     item.src = linksrc
     item.style.position = 'fixed'
-    //Can also use item.left = y+'px'
-    //item.right = z+'px'
-    item.style.left = y
-    item.style.bottom = z
+    item.style.left = y+'px'
+    item.style.right = z+'px'
+    // Can also use with item.style.left = y
+    // item.style.bottom = z
     document.body.append(item)
 
     item.addEventListener('click', function(){
@@ -49,4 +49,6 @@ function newItem(linksrc, y, z){
     })
     return;
 }
-newItem('assets/sword.png', '500px', '405px')
+newItem('assets/sword.png', 500, 405)
+newItem('assets/shield.png', 165, 185)
+newItem('assets/staff.png', 600, 100)
