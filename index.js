@@ -40,8 +40,8 @@ function newItem(linksrc, y, z){
     item.position = 'fixed'
     //Can also use item.left = y+'px'
     //item.right = z+'px'
-    item.left = y
-    item.right = z
+    item.left = y+'px'
+    item.bottom = z
     document.body.append(item)
 
     item.addEventListener('click', function(){
@@ -49,4 +49,4 @@ function newItem(linksrc, y, z){
     })
     return;
 }
-newItem('assets/sword.png', '500px', '405px')
+newItem('assets/sword.png', 500, '405px')
