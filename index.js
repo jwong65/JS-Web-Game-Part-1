@@ -8,7 +8,7 @@ function newImage( w, y, z){
     character.style.left=( y)
     character.style.bottom=(z)
     document.body.append(character)
-    return character
+    return;
 }
 
 // let greenCharacter = document.createElement('img')
@@ -17,15 +17,7 @@ function newImage( w, y, z){
 // greenCharacter.style.left = '100px'
 // greenCharacter.style.bottom = '100px'
 // document.body.append(greenCharacter)
-newImage('assets/green-character.gif', '100px', '100px');
-
-// let tree =document.createElement('img')
-// tree.src ='assets/pine-tree.png'
-// tree.style.position='fixed'
-// tree.style.left='450px'
-// tree.style.bottom='200px'
-// document.body.append(tree)
-
+newImage('assets/green-character.gif', '100px', '100px')
 newImage('assets/pine-tree.png', '450px', '200px')
 newImage('assets/tree.png', '200px', '300px')
 newImage('assets/pillar.png', '350px', '100px')
@@ -42,6 +34,19 @@ newImage('assets/well.png', '500px', '425px')
 // sword.addEventListener('click', function(){
 //     sword.remove()
 // })
-function newItem(){
-    
+function newItem(linksrc, y, z){
+    let item = document.createElement('img')
+    item.src = linksrc
+    item.position = 'fixed'
+    //Can also use item.left = y+'px'
+    //item.right = z+'px'
+    item.left = y
+    item.right = z
+    document.body.append(item)
+
+    item.addEventListener('click', function(){
+        item.remove()
+    })
+    return;
 }
+newItem('assets/sword.png', '500px', '405px')
