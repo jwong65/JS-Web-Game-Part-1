@@ -39,12 +39,12 @@ function newItem(linksrc, y, z){
     item.src = linksrc
     item.style.position = 'fixed'
     item.style.left = y+'px'
-    item.style.right = z+'px'
+    item.style.bottom = z+'px'
     // Can also use with item.style.left = y
     // item.style.bottom = z
     document.body.append(item)
 
-    item.addEventListener('click', function(){
+    item.addEventListener('dblclick', function(){
         item.remove()
     })
     return;
