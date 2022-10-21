@@ -2,8 +2,8 @@ function newImage( w, y, z){
     let character = document.createElement('img')
     character.src = w
     character.style.position='fixed'
-    character.style.left=( y+'px')
-    character.style.bottom=(z+'px')
+    character.style.left=( y)
+    character.style.bottom=(z)
     document.body.append(character)
     return character
 }
@@ -14,7 +14,7 @@ function newImage( w, y, z){
 // greenCharacter.style.left = '100px'
 // greenCharacter.style.bottom = '100px'
 // document.body.append(greenCharacter)
-newImage('assets/green-character.gif', 100, 100);
+newImage('assets/green-character.gif', '100px', '100px');
 
 // let tree =document.createElement('img')
 // tree.src ='assets/pine-tree.png'
