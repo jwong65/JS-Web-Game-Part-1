@@ -23,4 +23,4 @@ newImage('assets/green-character.gif', 100, 100);
 // tree.style.bottom='200px'
 // document.body.append(tree)
 
-// newImage(tree, 450, 200)
+newImage('assets/pine-tree.png', 450, 200)
