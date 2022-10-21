@@ -7,3 +7,7 @@ document.body.append(greenCharacter)
 
 let tree =document.createElement('img')
 tree.src ='assets/pine-tree.png'
+tree.style.position='fixed'
+tree.style.left='450px'
+tree.style.bottom='200px'
+document.body.append(tree)
