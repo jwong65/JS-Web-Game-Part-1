@@ -55,10 +55,10 @@ newItem('assets/staff.png', 600, 100)
 
 //window.innerWidth - 
 //window.innerHeight - for the size of the screen.
-// function addBackground(x,y,z){
-//     for (let i=0; i< window.innerHeight; i++)
-//     {
-//         newImage(x,i+100,(i+100)+px)
-//     }
-// }
-// addBackground('assets/grass.png', )
+function addBackground(x,y,z){
+    for (let i=0; i< window.innerWidth; i++)
+    {
+        newImage(x,(Number(y)+(i*100)+px),number(z)+((i*100)+px))
+    }
+}
+addBackground('assets/grass.png', 100, 100)
