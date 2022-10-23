@@ -54,11 +54,13 @@ newItem('assets/sheild.png', 165, 185)
 newItem('assets/staff.png', 600, 100)
 
 //window.innerWidth - 
-//window.innerHeight - for the size of the screen.
-function addBackground(x,y,z){
-    for (let i=0; i< window.innerWidth; i++)
+// //window.innerHeight - for the size of the screen.
+// console.log(window.innerWidth)
+// console.log(window.innerHeight)
+function addBackground(x, y, z, height,width,){
+    for (let i=0; i< width; i++)
     {
-        newImage(x,(Number(y)+(i*100)+px),number(z)+((i*100)+px))
+        newImage(x,y+ width*100, z+height*100)
     }
 }
 addBackground('assets/grass.png', 100, 100)
