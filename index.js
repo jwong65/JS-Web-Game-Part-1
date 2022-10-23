@@ -59,8 +59,11 @@ newItem('assets/staff.png', 600, 100)
 // console.log(window.innerHeight)
 function addBackground(x, y, z, height,width,){
     for (let i=0; i< width; i++)
-    {
-        newImage(x, (y+ width*100), (z+height*100))
+    {{
+        for (let u=0; u<height; u++){
+            newImage(x, (y+ width*100), (z+height*100))
+        }
     }
+}
 }
 addBackground('assets/grass.png', 0, 0, window.innerHeight, window.innerWidth)
