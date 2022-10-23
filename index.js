@@ -56,14 +56,13 @@ newItem('assets/staff.png', 600, 100)
 //window.innerWidth - 
 // //window.innerHeight - for the size of the screen.
 // console.log(window.innerWidth)
-// console.log(window.innerHeight)
-function addBackground(x, y, z, height,width,){
-    for (let i=0; i< width; i++)
-    {{
-        for (let u=0; u<height; u++){
-            newImage(x, (y+ width*100), (z+height*100))
-        }
-    }
-}
-}
-addBackground('assets/grass.png', 0, 0, window.innerHeight, window.innerWidth)
+// // console.log(window.innerHeight)
+// function addBackground(x, y, z, height,width,){
+//     for (let i=0; i< width; i++)
+//     {{
+//         for (let u=0; u<height; u++)
+//         newImage(x, (y+ width*100), (z+height*100))
+//     }
+// }
+// }
+// addBackground('assets/grass.png', 0, 0, window.innerHeight, window.innerWidth)
