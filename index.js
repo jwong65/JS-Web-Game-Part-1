@@ -40,7 +40,7 @@ function newItem(linksrc, y, z){
     item.style.position = 'fixed'
     item.style.left = y+'px'
     item.style.bottom = z+'px'
-    // Can also use with item.style.left = y
+    // Can also use with item.style.left = y or y+'px' if you have the number.
     // item.style.bottom = z
     document.body.append(item)
 
@@ -60,7 +60,7 @@ newItem('assets/staff.png', 600, 100)
 function addBackground(x, y, z, height,width,){
     for (let i=0; i< width; i++)
     {
-        newImage(x,y+ width*100, z+height*100)
+        newImage(x, (y+ width*100), (z+height*100))
     }
 }
-addBackground('assets/grass.png', 100, 100)
+addBackground('assets/grass.png', 0, 0, window.innerHeight, window.innerWidth)
